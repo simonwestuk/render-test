@@ -32,4 +32,4 @@ jobs:
         curl -X POST \
              -H "Authorization: Bearer ${{ secrets.RENDER_KEY }}" \
              -H "Content-Type: application/json" \
-             secrets.RENDER_DEPLOY
+             "${{ secrets.RENDER_DEPLOY }}"
